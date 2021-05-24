@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     width: 1200px;
+    color: #fff;
 }
 
 .wrapper {
@@ -23,14 +24,12 @@ body {
 .block {
     padding: 30px;
     background-color:rgb(7, 156, 206);
-    color: #fff;
 }
 
 .btn {
     background-color:cornflowerblue;
     width: 100px;
     height: 25px;
-    color: #fff;
     display: block;
     border: 0;
 }
@@ -40,6 +39,5 @@ body {
     width: 500px;
     height: 750px;
     margin-bottom: 30px;
-    color: #fff;
     padding: 30px;
 }
