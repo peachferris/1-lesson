@@ -37,6 +37,7 @@ body {
 
 .console {
     background-color: darkslateblue;
+    overflow: scroll;
     width: 500px;
     height: 750px;
     margin-bottom: 30px;
