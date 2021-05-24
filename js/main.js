@@ -4,15 +4,17 @@ function get(elem) {
   get('button').onclick = function() {
     get('console').innerHTML += 'Старт прогресса <br>';
     get('button').innerHTML = 'В процессе';
+
     setTimeout(function() {
       alert('Успешно');
-      get('console').innerHTML += '-Окончание прогресса <br>';
+      get('console').innerHTML += 'Окончание прогресса <br>';
       for (var i = 0; i < 16; i++) {
         get(i).style.transform = 'rotateX(0)';
         get(i).style.transition = '0s';
         get('button').innerHTML = 'start';
       }
     }, 2100);
+    
     for (var i = 0; i < 16; i++) {
       get(i).style.transition = '0.5s';
       var t = i * 100;
@@ -23,5 +25,9 @@ function get(elem) {
           get('console').innerHTML += 'cell ' + (i + 1) + ' окончание анимации ячейки <br>';
         }, 500, i)
       }, t, i);
+
+      get('button').onclick = function () {
+        get('console').innerHTML = ' ';
+        }
     }
   }
