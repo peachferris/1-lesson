@@ -4,7 +4,7 @@ function get(elem) {
   get('button').onclick = function() {
     get('console').innerHTML += 'Старт прогресса <br>';
     get('button').innerHTML = 'В процессе';
-
+    
     setTimeout(function() {
       alert('Успешно');
       get('console').innerHTML += 'Окончание прогресса <br>';
@@ -25,9 +25,10 @@ function get(elem) {
           get('console').innerHTML += 'cell ' + (i + 1) + ' окончание анимации ячейки <br>';
         }, 500, i)
       }, t, i);
-
+    }
       get('button').onclick = function () {
         get('console').innerHTML = ' ';
-        }
+        window.location.reload(true);
     }
+    
   }
