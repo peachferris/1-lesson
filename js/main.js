@@ -1,8 +1,17 @@
 function get(elem) {
     return document.getElementById(elem)
   };
+
+ 
   get('button').onclick = function() {
+    
+    const wrap = document.getElementById('console');
+    while (wrap.firstChild) {
+        wrap.removeChild(wrap.lastChild);
+    };
+
     get('console').innerHTML += 'Старт прогресса <br>';
+
     get('button').innerHTML = 'В процессе';
     
     setTimeout(function() {
@@ -26,9 +35,6 @@ function get(elem) {
         }, 500, i)
       }, t, i);
     }
-      get('button').onclick = function () {
-        get('console').innerHTML = ' ';
-        window.location.reload(true);
-    }
+    
     
   }
